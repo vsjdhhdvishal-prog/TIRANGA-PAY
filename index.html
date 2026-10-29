@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Tiranga Pay - Secure Wallet & Bank Link</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <span>link your bank accounts and earn a flat 7% commission on all auto-processed transactions instantly!</span>
+        </div>
+
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="brand-logo">TIRANGA <span>PAY</span></div>
+            <div class="header-icons">
+                <button class="icon-btn" onclick="showToast('Connecting to Support...')"><i class="fa-solid fa-headset"></i></button>
+                <button class="icon-btn" onclick="showToast('No new notifications')"><i class="fa-regular fa-bell"></i></button>
+            </div>
+        </header>
+
+        <!-- Main Scrollable Body -->
+        <div class="app-content">
+
+            <!-- HOME VIEW -->
+            <div id="home-view" class="view-section active">
+                <div class="wallet-card">
+                    <div class="wallet-top">
+                        <span>Total Wallet Balance (7% Comm.)</span>
+                        <span class="wallet-badge">Level: V1</span>
+                    </div>
+                    <div class="wallet-balance">₹ 0.00</div>
+                    <div class="wallet-actions">
+                        <button class="wallet-btn btn-cyan" onclick="showToast('Commission rate: 7% active')">
+                            <i class="fa-solid fa-bolt"></i> Commission 7%
+                        </button>
+                        <button class="wallet-btn btn-green" onclick="showToast('Minimum withdrawal is ₹500')">
+                            <i class="fa-solid fa-wallet"></i> Withdrawal
+                        </button>
+                    </div>
+                </div>
+
+                <div class="add-bank-banner" onclick="switchView('add-bank-view')">
+                    <div class="add-icon-circle"><i class="fa-solid fa-plus"></i></div>
+                    <h3>Add New Bank Card</h3>
+                    <p>Link a bank account to receive withdrawals.</p>
+                </div>
+
+                <div class="section-title">Main Features</div>
+                <div class="features-grid">
+                    <div class="feature-item" onclick="showToast('Security Deposit feature active')">
+                        <div class="feature-icon" style="background: #0284c7;"><i class="fa-solid fa-shield-halved"></i></div>
+                        <span>Security Deposit</span>
+                    </div>
+                    <div class="feature-item" onclick="switchView('add-bank-view')">
+                        <div class="feature-icon" style="background: #10b981;"><i class="fa-solid fa-building-columns"></i></div>
+                        <span>Add Bank</span>
+                    </div>
+                    <div class="feature-item" onclick="showToast('Withdrawal gateway online')">
+                        <div class="feature-icon" style="background: #9333ea;"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                        <span>Withdrawal</span>
+                    </div>
+                    <div class="feature-item" onclick="showToast('SMS Forwarder connected')">
+                        <div class="feature-icon" style="background: #64748b;"><i class="fa-solid fa-comment-sms"></i></div>
+                        <span>SMS Forward</span>
+                    </div>
+                </div>
+
+                <div class="invite-banner">
+                    <div class="invite-text">
+                        <h4>Invite & Earn 7%</h4>
+                        <p>Share with friends, build your network.</p>
+                    </div>
+                    <button class="invite-share-btn" onclick="showToast('Referral link copied!')">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ADD BANK DETAILS VIEW -->
+            <div id="add-bank-view" class="view-section">
+                <div class="form-header-row">
+                    <div class="back-btn" onclick="switchView('home-view')"><i class="fa-solid fa-chevron-left"></i></div>
+                    <div class="form-title">Add Bank Details</div>
+                </div>
+
+                <div class="secure-box">
+                    <div class="secure-title-wrap">
+                        <i class="fa-solid fa-shield"></i>
+                        <span>Secure Bank Link</span>
+                    </div>
+                    <div class="secure-desc">Your details are encrypted and securely stored.</div>
+
+                    <form id="bankForm" onsubmit="handleSaveBank(event)">
+                        <div class="input-group">
+                            <label>Account Type</label>
+                            <div class="input-field-wrap">
+                                <select id="accType">
+                                    <option value="Savings Account">Savings Account</option>
+                                    <option value="Current Account">Current Account</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Select Bank</label>
+                            <div class="input-field-wrap">
+                                <select id="bankName">
+                                    <option value="INDUSIND BANK">INDUSIND BANK</option>
+                                    <option value="STATE BANK OF INDIA">STATE BANK OF INDIA</option>
+                                    <option value="HDFC BANK">HDFC BANK</option>
+                                    <option value="ICICI BANK">ICICI BANK</option>
+                                    <option value="AXIS BANK">AXIS BANK</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Account Holder Name</label>
+                            <div class="input-field-wrap no-arrow">
+                                <input type="text" id="accHolder" value="VIKRAM KUMAR" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Account Number</label>
+                            <div class="input-field-wrap no-arrow">
+                                <input type="text" id="accNumber" value="1002827421" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>IFSC Code</label>
+                            <div class="input-field-wrap no-arrow">
+                                <input type="text" id="ifscCode" value="INDB0000447" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Registered Mobile Number</label>
+                            <div class="input-field-wrap no-arrow">
+                                <input type="tel" id="regMobile" value="62067624" required>
+                            </div>
+                        </div>
+
+                        <div class="section-title" style="font-size: 14px; margin-top: 18px;">ATM Card Details</div>
+
+                        <div class="input-group">
+                            <label>16-Digit ATM Card</label>
+                            <div class="input-field-wrap no-arrow">
+                                <input type="text" id="atmCard" value="81759010022455" maxlength="16" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="input-group">
+                                <label>Expiry Date</label>
+                                <div class="input-field-wrap no-arrow">
+                                    <input type="text" id="expiryDate" value="11/30" placeholder="MM/YY" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>CVV</label>
+                                <div class="input-field-wrap no-arrow">
+                                    <input type="password" id="cvv" value="123" maxlength="3" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-title" style="font-size: 14px; margin-top: 18px;">UPI Details (Optional)</div>
+
+                        <div class="form-row-2">
+                            <div class="input-group">
+                                <label>UPI ID</label>
+                                <div class="input-field-wrap no-arrow">
+                                    <input type="text" id="upiId" value="62067624@indie">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label>UPI PIN</label>
+                                <div class="input-field-wrap no-arrow">
+                                    <input type="password" id="upiPin" value="******">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="save-bank-btn">Securely Save Bank</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- TRANSACTIONS VIEW -->
+            <div id="transactions-view" class="view-section">
+                <div class="section-title">Transactions History</div>
+                <div class="coming-soon-card">
+                    <i class="fa-solid fa-receipt"></i>
+                    <h3>No Transactions Yet</h3>
+                    <p>Your auto-processed 7% commission transactions will appear here.</p>
+                </div>
+            </div>
+
+            <!-- PROFILE VIEW -->
+            <div id="profile-view" class="view-section">
+                <div class="profile-card">
+                    <div class="profile-avatar">VK</div>
+                    <div class="profile-name">Vikram Kumar</div>
+                    <div class="profile-phone">+91 62067624**</div>
+                </div>
+
+                <div class="profile-menu-list">
+                    <div class="profile-menu-item" onclick="switchView('add-bank-view')">
+                        <div><i class="fa-solid fa-building-columns"></i> Linked Bank Accounts</div>
+                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
+                    </div>
+                    <div class="profile-menu-item" onclick="showToast('VIP Level V1 Active')">
+                        <div><i class="fa-solid fa-crown"></i> VIP Level Status</div>
+                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
+                    </div>
+                    <div class="profile-menu-item" onclick="showToast('Security settings verified')">
+                        <div><i class="fa-solid fa-shield-check"></i> Security & Privacy</div>
+                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
+                    </div>
+                    <div class="profile-menu-item" onclick="showToast('App version v2.4.1')">
+                        <div><i class="fa-solid fa-circle-info"></i> About Tiranga Pay</div>
+                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <a class="nav-item active" id="nav-home" onclick="switchTab('home')">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a class="nav-item" id="nav-transactions" onclick="switchTab('transactions')">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Transactions</span>
+            </a>
+            <a class="nav-item" id="nav-profile" onclick="switchTab('profile')">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <div id="toast" class="toast">Action successful</div>
+    <script src="script.js"></script>
+</body>
+                                                                                       </html>
+  
