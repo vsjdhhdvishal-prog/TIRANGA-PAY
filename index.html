@@ -2,259 +2,384 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tiranga Pay - Secure Wallet & Bank Link</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KP VISION - Creative Solutions for Your Brand</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="mobile-container">
-        <!-- Announcement Bar -->
-        <div class="announcement-bar">
-            <span>link your bank accounts and earn a flat 7% commission on all auto-processed transactions instantly!</span>
+    <!-- Top Announcement / Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="crown">👑</span>
+                <div class="logo-text">
+                    <h2>KP VISION</h2>
+                    <small>YOUR VISION • OUR CREATIVITY</small>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About Us</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge-sub">CREATIVE SOLUTIONS FOR YOUR BRAND</span>
+                <h1>TURN YOUR IDEAS INTO <span class="gold-gradient">STUNNING VISUALS</span></h1>
+                <p>We create high-quality images, videos and designs that make your products stand out and sell more.</p>
+                
+                <div class="hero-features">
+                    <div class="feature-badge"><i class="fas fa-shield-alt"></i> High Quality Results</div>
+                    <div class="feature-badge"><i class="fas fa-bolt"></i> Fast Delivery</div>
+                    <div class="feature-badge"><i class="fas fa-star"></i> 100% Client Satisfaction</div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn-gold">Explore Our Services <i class="fas fa-arrow-right"></i></a>
+                    <a href="#portfolio" class="btn btn-outline"><i class="fas fa-play"></i> Watch Our Intro Video</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="video-preview-card">
+                    <div class="play-icon-overlay"><i class="fas fa-play"></i></div>
+                    <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=800&q=80" alt="Studio Setup">
+                </div>
+                <div class="floating-tag">
+                    <span class="gold-gradient">AI + Creativity = Growth</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>E-commerce Images</h3>
+                    <p>Product photos that boost your sales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>A+ Content</h3>
+                    <p>Premium product listing designs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-image"></i></div>
+                    <h3>AI Images</h3>
+                    <p>Creative & realistic AI generated visuals.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-video"></i></div>
+                    <h3>AI Videos</h3>
+                    <p>Engaging videos that tell your story.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>AI Ads</h3>
+                    <p>High-converting ad creatives.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-users"></i></div>
+                    <h3>AI UGC Ads</h3>
+                    <p>Realistic user generated style content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Scan & Pay Section -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-info">
+                <span class="section-subtitle">ABOUT KP VISION</span>
+                <h2>We Bring Your Products to Life with AI & Creativity</h2>
+                <p>KP VISION is a creative studio offering professional digital solutions for e-commerce brands, businesses and entrepreneurs. We specialize in product images, A+ content, AI videos, AI images, ads and UGC ads.</p>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Creative Designs</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Modern Technology</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> Affordable Pricing</div>
+                    <div class="highlight-item"><i class="fas fa-check-circle"></i> On-Time Delivery</div>
+                </div>
+
+                <a href="#contact" class="btn btn-gold mt-20">Know More About Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="about-visual-container">
+                <div class="brand-showcase-box">
+                    <div class="crown-gold">👑</div>
+                    <h3>KP VISION</h3>
+                    <small>YOUR VISION • OUR CREATIVITY</small>
+                </div>
+
+                <div class="scan-pay-card">
+                    <h4>Scan & Pay</h4>
+                    <div class="qr-placeholder">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=kpvision@okaxis" alt="UPI QR Code">
+                    </div>
+                    <p class="upi-id">UPI ID: <strong>kpvision@okaxis</strong></p>
+                    <div class="payment-icons">
+                        <span class="gpay">GPay</span>
+                        <span class="phonepe">PhonePe</span>
+                        <span class="paytm">Paytm</span>
+                    </div>
+                    <h5 class="thank-you">Thank You!</h5>
+                    <small>For Your Support</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">OUR PORTFOLIO</span>
+                <h2>Amazing Visuals for Every Need</h2>
+                <p>Explore our sample work created with AI and professional editing.</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="perfume">Perfume</button>
+                <button class="filter-btn" data-filter="shoes">Shoes</button>
+                <button class="filter-btn" data-filter="bags">Bags</button>
+                <button class="filter-btn" data-filter="watches">Watches</button>
+                <button class="filter-btn" data-filter="wallets">Wallets</button>
+                <button class="filter-btn" data-filter="juices">Juices</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="perfume">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=400&q=80" alt="Perfume">
+                    <div class="portfolio-overlay">
+                        <h4>PERFUME</h4>
+                        <p>Product + Lifestyle</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shoes">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Shoes">
+                    <div class="portfolio-overlay">
+                        <h4>SHOES</h4>
+                        <p>Product + Features</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="bags">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80" alt="Bags">
+                    <div class="portfolio-overlay">
+                        <h4>BAGS</h4>
+                        <p>Lifestyle + Details</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="watches">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Watches">
+                    <div class="portfolio-overlay">
+                        <h4>WATCHES</h4>
+                        <p>Product + Features</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wallets">
+                    <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=400&q=80" alt="Wallets">
+                    <div class="portfolio-overlay">
+                        <h4>WALLETS</h4>
+                        <p>Product + Lifestyle</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="juices">
+                    <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=400&q=80" alt="Juices">
+                    <div class="portfolio-overlay">
+                        <h4>JUICES</h4>
+                        <p>Product + Lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="section-subtitle">OUR PRICING</span>
+                    <h2>Premium Quality, Affordable Rates</h2>
+                    <p>Get professional visuals and content at the best prices.</p>
+                </div>
+                <a href="#contact" class="link-view">View Full Pricing <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <i class="fas fa-shopping-cart service-icon-small"></i>
+                    <h4>E-commerce Images</h4>
+                    <div class="price">₹20 <small>/ image</small></div>
+                    <p class="specs">(1500 × 1500)</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-file-invoice service-icon-small"></i>
+                    <h4>A+ Content</h4>
+                    <div class="price">₹50 <small>/ image</small></div>
+                    <p class="specs">(Web: 4920 × 1500 | Mobile: 1000 × 1500)</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-image service-icon-small"></i>
+                    <h4>AI Images</h4>
+                    <div class="price">₹20 <small>/ image</small></div>
+                    <p class="specs">(Up to 2000 × 2000)</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-video service-icon-small"></i>
+                    <h4>AI Videos</h4>
+                    <div class="price">₹300 <small>/ video</small></div>
+                    <p class="specs">(Up to 30 seconds)</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-bullhorn service-icon-small"></i>
+                    <h4>AI Ads</h4>
+                    <div class="price">₹500 <small>/ video</small></div>
+                    <p class="specs">(30 seconds)</p>
+                </div>
+                <div class="pricing-card">
+                    <i class="fas fa-users service-icon-small"></i>
+                    <h4>AI UGC Ads</h4>
+                    <div class="price">₹1000 - ₹3000 <small>/ video</small></div>
+                    <p class="specs">(According to product & concept)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Client Reviews -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="section-subtitle">CLIENT REVIEWS</span>
+                    <h2>What Our Clients Say</h2>
+                    <p>Your trust and happiness are our biggest rewards.</p>
+                </div>
+                <a href="#reviews" class="btn btn-outline-sm">View All Reviews <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohit Sharma">
+                        <div>
+                            <h4>Rohit Sharma</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p>"Amazing work! The product images and video helped me increase my sales on Amazon. Highly recommended!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Neha Verma">
+                        <div>
+                            <h4>Neha Verma</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p>"Very professional and creative team. The A+ content design was exactly what I needed. Will work again!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Amit Singh">
+                        <div>
+                            <h4>Amit Singh</h4>
+                            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p>"Fast delivery, great quality and excellent communication. KP VISION is the best!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <span class="crown">👑</span>
+                    <div class="logo-text">
+                        <h2>KP VISION</h2>
+                        <small>YOUR VISION • OUR CREATIVITY</small>
+                    </div>
+                </div>
+                <p class="mt-20">Creating high-end visual solutions for modern brands and e-commerce creators.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> kpvision@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> India</p>
+            </div>
+
+            <div class="footer-col cta-footer-box">
+                <h4>Let's Create Something Amazing Together</h4>
+                <a href="https://wa.me/919876543210" class="btn btn-gold mt-10"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
         </div>
 
-        <!-- App Header -->
-        <header class="app-header">
-            <div class="brand-logo">TIRANGA <span>PAY</span></div>
-            <div class="header-icons">
-                <a href="admin.html" class="icon-btn" title="Admin Panel" style="text-decoration:none;"><i class="fa-solid fa-user-shield"></i></a>
-                <button class="icon-btn" onclick="showToast('Connecting to Support...')"><i class="fa-solid fa-headset"></i></button>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 KP VISION. All Rights Reserved.</p>
             </div>
-        </header>
-
-        <!-- Main Scrollable Body -->
-        <div class="app-content">
-
-            <!-- HOME VIEW -->
-            <div id="home-view" class="view-section active">
-                <div class="wallet-card">
-                    <div class="wallet-top">
-                        <span>Total Wallet Balance (7% Comm.)</span>
-                        <span class="wallet-badge" id="userVipBadge">Level: V1</span>
-                    </div>
-                    <div class="wallet-balance" id="userWalletBalance">₹ 0.00</div>
-                    <div class="wallet-actions">
-                        <button class="wallet-btn btn-cyan" onclick="showToast('Commission rate: 7% active')">
-                            <i class="fa-solid fa-bolt"></i> Commission 7%
-                        </button>
-                        <button class="wallet-btn btn-green" onclick="showToast('Minimum withdrawal is ₹500')">
-                            <i class="fa-solid fa-wallet"></i> Withdrawal
-                        </button>
-                    </div>
-                </div>
-
-                <div class="add-bank-banner" onclick="switchView('add-bank-view')">
-                    <div class="add-icon-circle"><i class="fa-solid fa-plus"></i></div>
-                    <h3>Add New Bank Card</h3>
-                    <p>Link a bank account to receive withdrawals.</p>
-                </div>
-
-                <div class="section-title">Main Features</div>
-                <div class="features-grid">
-                    <div class="feature-item" onclick="showToast('Security Deposit feature active')">
-                        <div class="feature-icon" style="background: #0284c7;"><i class="fa-solid fa-shield-halved"></i></div>
-                        <span>Security Deposit</span>
-                    </div>
-                    <div class="feature-item" onclick="switchView('add-bank-view')">
-                        <div class="feature-icon" style="background: #10b981;"><i class="fa-solid fa-building-columns"></i></div>
-                        <span>Add Bank</span>
-                    </div>
-                    <div class="feature-item" onclick="showToast('Withdrawal gateway online')">
-                        <div class="feature-icon" style="background: #9333ea;"><i class="fa-solid fa-money-bill-transfer"></i></div>
-                        <span>Withdrawal</span>
-                    </div>
-                    <div class="feature-item" onclick="showToast('SMS Forwarder connected')">
-                        <div class="feature-icon" style="background: #64748b;"><i class="fa-solid fa-comment-sms"></i></div>
-                        <span>SMS Forward</span>
-                    </div>
-                </div>
-
-                <div class="invite-banner">
-                    <div class="invite-text">
-                        <h4>Invite & Earn 7%</h4>
-                        <p>Share with friends, build your network.</p>
-                    </div>
-                    <button class="invite-share-btn" onclick="showToast('Referral link copied!')">
-                        <i class="fa-solid fa-share-nodes"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- ADD BANK DETAILS VIEW -->
-            <div id="add-bank-view" class="view-section">
-                <div class="form-header-row">
-                    <div class="back-btn" onclick="switchView('home-view')"><i class="fa-solid fa-chevron-left"></i></div>
-                    <div class="form-title">Add Bank Details</div>
-                </div>
-
-                <div class="secure-box">
-                    <div class="secure-title-wrap">
-                        <i class="fa-solid fa-shield"></i>
-                        <span>Secure Bank Link</span>
-                    </div>
-                    <div class="secure-desc">Your details are encrypted and securely stored.</div>
-
-                    <form id="bankForm" onsubmit="handleSaveBank(event)">
-                        <div class="input-group">
-                            <label>Account Type</label>
-                            <div class="input-field-wrap">
-                                <select id="accType">
-                                    <option value="Savings Account">Savings Account</option>
-                                    <option value="Current Account">Current Account</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Select Bank</label>
-                            <div class="input-field-wrap">
-                                <select id="bankName">
-                                    <option value="INDUSIND BANK">INDUSIND BANK</option>
-                                    <option value="STATE BANK OF INDIA">STATE BANK OF INDIA</option>
-                                    <option value="HDFC BANK">HDFC BANK</option>
-                                    <option value="ICICI BANK">ICICI BANK</option>
-                                    <option value="AXIS BANK">AXIS BANK</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Account Holder Name</label>
-                            <div class="input-field-wrap no-arrow">
-                                <input type="text" id="accHolder" value="VIKRAM KUMAR" required>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Account Number</label>
-                            <div class="input-field-wrap no-arrow">
-                                <input type="text" id="accNumber" value="1002827421" required>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label>IFSC Code</label>
-                            <div class="input-field-wrap no-arrow">
-                                <input type="text" id="ifscCode" value="INDB0000447" required>
-                            </div>
-                        </div>
-
-                        <div class="input-group">
-                            <label>Registered Mobile Number</label>
-                            <div class="input-field-wrap no-arrow">
-                                <input type="tel" id="regMobile" value="62067624" required>
-                            </div>
-                        </div>
-
-                        <div class="section-title" style="font-size: 14px; margin-top: 18px;">ATM Card Details</div>
-
-                        <div class="input-group">
-                            <label>16-Digit ATM Card</label>
-                            <div class="input-field-wrap no-arrow">
-                                <input type="text" id="atmCard" value="81759010022455" maxlength="16" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row-2">
-                            <div class="input-group">
-                                <label>Expiry Date</label>
-                                <div class="input-field-wrap no-arrow">
-                                    <input type="text" id="expiryDate" value="11/30" placeholder="MM/YY" required>
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <label>CVV</label>
-                                <div class="input-field-wrap no-arrow">
-                                    <input type="password" id="cvv" value="123" maxlength="3" required>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-title" style="font-size: 14px; margin-top: 18px;">UPI Details (Optional)</div>
-
-                        <div class="form-row-2">
-                            <div class="input-group">
-                                <label>UPI ID</label>
-                                <div class="input-field-wrap no-arrow">
-                                    <input type="text" id="upiId" value="62067624@indie">
-                                </div>
-                            </div>
-                            <div class="input-group">
-                                <label>UPI PIN</label>
-                                <div class="input-field-wrap no-arrow">
-                                    <input type="password" id="upiPin" value="******">
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="save-bank-btn">Securely Save Bank</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- TRANSACTIONS VIEW -->
-            <div id="transactions-view" class="view-section">
-                <div class="section-title">Transactions History</div>
-                <div id="transactionsList">
-                    <div class="coming-soon-card">
-                        <i class="fa-solid fa-receipt"></i>
-                        <h3>No Transactions Yet</h3>
-                        <p>Your auto-processed 7% commission transactions will appear here.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROFILE VIEW -->
-            <div id="profile-view" class="view-section">
-                <div class="profile-card">
-                    <div class="profile-avatar">VK</div>
-                    <div class="profile-name">Vikram Kumar</div>
-                    <div class="profile-phone">+91 62067624**</div>
-                </div>
-
-                <div class="profile-menu-list">
-                    <div class="profile-menu-item" onclick="switchView('add-bank-view')">
-                        <div><i class="fa-solid fa-building-columns"></i> Linked Bank Accounts</div>
-                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
-                    </div>
-                    <div class="profile-menu-item" onclick="showToast('VIP Level V1 Active')">
-                        <div><i class="fa-solid fa-crown"></i> VIP Level Status</div>
-                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
-                    </div>
-                    <div class="profile-menu-item" onclick="showToast('Security settings verified')">
-                        <div><i class="fa-solid fa-shield-check"></i> Security & Privacy</div>
-                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
-                    </div>
-                    <div class="profile-menu-item" onclick="showToast('App version v2.4.1')">
-                        <div><i class="fa-solid fa-circle-info"></i> About Tiranga Pay</div>
-                        <i class="fa-solid fa-chevron-right" style="color: #cbd5e1; font-size: 12px;"></i>
-                    </div>
-                </div>
-            </div>
-
         </div>
+    </footer>
 
-        <!-- Bottom Navigation Bar -->
-        <nav class="bottom-nav">
-            <a class="nav-item active" id="nav-home" onclick="switchTab('home')">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </a>
-            <a class="nav-item" id="nav-transactions" onclick="switchTab('transactions')">
-                <i class="fa-solid fa-list-check"></i>
-                <span>Transactions</span>
-            </a>
-            <a class="nav-item" id="nav-profile" onclick="switchTab('profile')">
-                <i class="fa-solid fa-user"></i>
-                <span>Profile</span>
-            </a>
-        </nav>
-    </div>
-
-    <div id="toast" class="toast">Action successful</div>
     <script src="script.js"></script>
 </body>
 </html>
