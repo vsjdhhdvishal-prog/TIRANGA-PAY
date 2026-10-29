@@ -91,7 +91,8 @@ body {
 
 .header-icons {
     display: flex;
-    gap: 12px;
+    gap: 8px;
+    align-items: center;
 }
 
 .icon-btn {
@@ -376,7 +377,8 @@ body {
     border-radius: 20px;
     padding: 40px 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
 }
 
 .coming-soon-card i { font-size: 48px; color: var(--primary); margin-bottom: 16px; }
@@ -389,6 +391,7 @@ body {
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
 }
 
 .profile-avatar {
@@ -412,6 +415,7 @@ body {
     background: var(--card-bg);
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
 }
 
 .profile-menu-item {
@@ -473,4 +477,4 @@ body {
 }
 
 .toast.show { transform: translateX(-50%) translateY(0); }
-  
+    
