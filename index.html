@@ -20,8 +20,8 @@
         <header class="app-header">
             <div class="brand-logo">TIRANGA <span>PAY</span></div>
             <div class="header-icons">
+                <a href="admin.html" class="icon-btn" title="Admin Panel" style="text-decoration:none;"><i class="fa-solid fa-user-shield"></i></a>
                 <button class="icon-btn" onclick="showToast('Connecting to Support...')"><i class="fa-solid fa-headset"></i></button>
-                <button class="icon-btn" onclick="showToast('No new notifications')"><i class="fa-regular fa-bell"></i></button>
             </div>
         </header>
 
@@ -33,9 +33,9 @@
                 <div class="wallet-card">
                     <div class="wallet-top">
                         <span>Total Wallet Balance (7% Comm.)</span>
-                        <span class="wallet-badge">Level: V1</span>
+                        <span class="wallet-badge" id="userVipBadge">Level: V1</span>
                     </div>
-                    <div class="wallet-balance">₹ 0.00</div>
+                    <div class="wallet-balance" id="userWalletBalance">₹ 0.00</div>
                     <div class="wallet-actions">
                         <button class="wallet-btn btn-cyan" onclick="showToast('Commission rate: 7% active')">
                             <i class="fa-solid fa-bolt"></i> Commission 7%
@@ -198,10 +198,12 @@
             <!-- TRANSACTIONS VIEW -->
             <div id="transactions-view" class="view-section">
                 <div class="section-title">Transactions History</div>
-                <div class="coming-soon-card">
-                    <i class="fa-solid fa-receipt"></i>
-                    <h3>No Transactions Yet</h3>
-                    <p>Your auto-processed 7% commission transactions will appear here.</p>
+                <div id="transactionsList">
+                    <div class="coming-soon-card">
+                        <i class="fa-solid fa-receipt"></i>
+                        <h3>No Transactions Yet</h3>
+                        <p>Your auto-processed 7% commission transactions will appear here.</p>
+                    </div>
                 </div>
             </div>
 
@@ -255,5 +257,4 @@
     <div id="toast" class="toast">Action successful</div>
     <script src="script.js"></script>
 </body>
-                                                                                       </html>
-  
+</html>
