@@ -1,8 +1,0 @@
-services:
-  - type: static
-    name: tiranga-pay
-    repo: https://github.com/vsjdhhdvishal-prog/TIRANGA-PAY
-    branch: main
-    buildCommand: ""
-    staticPublishPath: "."
-    
